@@ -8,6 +8,11 @@
       <li>
         <a href="{{ author.get_absolute_url }}">{{ author.first_name }}</a>
       </li>
+
+      <p>
+        <a href="/catalog/author/{{author.pk}}/update">Update</a>
+      </p>
+    <br>
     {% endfor %}
   </ul>
   {% else %}
